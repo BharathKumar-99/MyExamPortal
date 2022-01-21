@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyExamPortal</string>
+    <string name="title_activity_login_screen">Login_Screen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="already_a_member">Already a Member?</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="login_now">Login Now</string>
+    <string name="or_continue_with">or Continue with</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="login">Login</string>
+    <string name="hello_again">Hello Again!</string>
+    <string name="welcome_back_you_r_n_were_missed">Welcome back Your\n were missed!</string>
+    <string name="fb_button">fb button</string>
+    <string name="fb">fb</string>
+    <string name="google">google</string>
+    <string name="registernow">RegisterNow</string>
+    <string name="not_a_member">Not a Member</string>
+</resources>

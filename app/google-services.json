@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "435694050424",
+    "project_id": "careerhub-914f5",
+    "storage_bucket": "careerhub-914f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435694050424:android:79e8d421723d9c5757218d",
+        "android_client_info": {
+          "package_name": "com.jrcreations.myexamportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435694050424-bkgdglb5ikaim5uhdu90pfs1tphvhase.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSs6CokNjj2E57HEi5koFSXc6rpsJLIEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435694050424-bkgdglb5ikaim5uhdu90pfs1tphvhase.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
