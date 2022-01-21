@@ -49,10 +49,11 @@
                 android:layout_marginTop="24dp"
                 android:background="@drawable/rounded_text"
                 android:ems="10"
+                android:hint="Name"
                 android:inputType="textPersonName"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:text="Name" />
+                android:textColorHint="#000000" />
 
             <EditText
                 android:id="@+id/signupemail"
@@ -104,8 +105,10 @@
                 android:background="@drawable/rounded_text"
                 android:ems="10"
                 android:inputType="date"
+                android:focusable="false"
                 android:paddingStart="20dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/signupphone"
@@ -128,6 +131,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="@color/blue"
+
                 android:text="Signup"
                 android:textColor="#FFFFFF"
                 app:cornerRadius="10dp"
