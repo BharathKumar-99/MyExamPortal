@@ -6,55 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".UI.HomeScreen">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:backgroundTint="@color/blue"
-                android:text="Quizzes"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:backgroundTint="@color/blue"
-                android:text="Mock Test"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:backgroundTint="@color/blue"
-                android:text="Previous Year Question"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:backgroundTint="@color/blue"
-                android:text="NCERT  Test"
-                android:textSize="20sp" />
-        </LinearLayout>
-    </ScrollView>
-
     <TextView
         android:id="@+id/textView7"
         android:layout_width="0dp"
@@ -86,7 +37,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/blue"
+            android:background="#E9E9EA"
             android:padding="10dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -103,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/profile_image"
@@ -113,11 +64,22 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
                 android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/Name"
-                app:layout_constraintStart_toStartOf="@+id/Name"
-                tools:layout_editor_absoluteY="49dp" />
+                app:layout_constraintStart_toStartOf="@+id/Name" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homerecycleview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,6 +37,7 @@ public class Signup_Screen extends AppCompatActivity {
     EditText email,password,name,phone,date,confirm_password;
     final Calendar myCalendar= Calendar.getInstance();
     Button signup;
+    String emailstr,passswordstr,namestr,phonestr,confirmstr;
     private FirebaseAuth mAuth;
     boolean emailvalid,passvalid;
     @Override
@@ -56,7 +57,7 @@ public class Signup_Screen extends AppCompatActivity {
         confirm_password=findViewById(R.id.signupconfirmpassword);
         signup=findViewById(R.id.signup);
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         String currentDateandTime = sdf.format(new Date());
         date.setText(currentDateandTime);
 
@@ -71,7 +72,7 @@ public class Signup_Screen extends AppCompatActivity {
 
 
         signup.setOnClickListener(v->{
-            String emailstr,passswordstr,namestr,phonestr,confirmstr;
+
 
             emailstr=email.getText().toString();
             passswordstr=password.getText().toString();
@@ -130,6 +131,13 @@ public class Signup_Screen extends AppCompatActivity {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("TAG", "createUserWithEmail:success");
                         Toast.makeText(this, "Successfully Created", Toast.LENGTH_SHORT).show();
+
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        Databaseupload db=new Databaseupload();
+                        String dob=date.getText().toString();
+                        assert user != null;
+                        String id=user.getUid();
+                        db.postDataUsingVolley(namestr,emailstr,this,id,phonestr,dob);
                         onBackPressed();
                     } else {
                         // If sign in fails, display a message to the user.
@@ -148,7 +156,7 @@ public class Signup_Screen extends AppCompatActivity {
         updateLabel();
     };
     private void updateLabel(){
-        String myFormat="MM/dd/yy";
+        String myFormat="MM-dd-yy";
         SimpleDateFormat dateFormat=new SimpleDateFormat(myFormat, Locale.US);
         date.setText(dateFormat.format(myCalendar.getTime()));
     }

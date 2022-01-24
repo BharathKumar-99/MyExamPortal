@@ -97,15 +97,25 @@
                 android:paddingEnd="20dp"
                 android:textColorHint="@color/black" />
 
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Date of birth"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
             <EditText
                 android:id="@+id/date"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_text"
                 android:ems="10"
-                android:inputType="date"
                 android:focusable="false"
+                android:inputType="date"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 tools:ignore="SpeakableTextPresentCheck" />

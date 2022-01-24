@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/drawable/baseline_3d_rotation_black_24dp.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/drawable/rounded_text.xml" value="0.11944444444444445" />
         <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
         <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/layout/activity_login_screen.xml" value="0.18" />
         <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/layout/activity_signup_screen.xml" value="0.25" />
+        <entry key="..\:/Users/SoulFinisher/AndroidStudioProjects/MyExamPortal/app/src/main/res/layout/mainbutton.xml" value="0.22" />
       </map>
     </option>
   </component>
